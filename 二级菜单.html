@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li>第一级
+            <ul  style="display: none">
+                <li>第二级
+                    <ul style="display: none">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </li>
+                <li>b
+                    <ul style="display: none">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </li>
+                <li>c
+                    <ul style="display: none">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>2
+            <ul  style="display: none">
+                <li>a
+                    <ul style="display: none">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </li>
+                <li>b
+                    <ul style="display: none">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </li>
+                <li>c
+                    <ul style="display: none">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>3
+            <ul  style="display: none">
+                <li>a
+                    <ul style="display: none">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </li>
+                <li>b
+                    <ul style="display: none">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </li>
+                <li>c
+                    <ul style="display: none">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+<script>
+   var box=document.getElementById('box')
+    box.addEventListener('click',function(e){
+        console.log(e)
+        if(e.target.firstElementChild.style.display=='none'){
+            e.target.firstElementChild.style.display='block'
+        }else{
+            e.target.firstElementChild.style.display='none'
+        }
+    },false)
+</script>
+</html>
